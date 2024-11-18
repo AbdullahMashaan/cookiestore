@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import storeImage from "./CookieStore.jpg";
+import ProductList from './Components/ProductList';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <h1>Levain Bakery</h1>
+       <p>A neighborhood bakery since 1995 baking BIG beloved cookies and more</p>
+       <img className='Store-Img' src={storeImage} alt="Levain Bakery" />
+    
+    <ProductList />
+    
     </div>
   );
 }

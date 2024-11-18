@@ -2,9 +2,49 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Store-Img {
+  min-width: 40%;
+}
+
+.Products-List {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
+  justify-content: space-around; /* Evenly distributes items with space around them */
+  padding: 20px;
+  gap: 20px; /* Adds spacing between items */
+  list-style-type: none; /* Removes default list styling */
+  background-color: #f9f9f9; /* Light background color for better contrast */
+}
+
+.Product-Item {
+  flex: 1 1 200px; /* Ensures items grow and shrink as needed, with a minimum width of 200px */
+  max-width: 250px; /* Maximum width for each item */
+  background-color: #fff; /* White background for each product */
+  border: 1px solid #ddd; /* Light border for each product */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures content does not overflow the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  text-align: center; /* Center-aligns the text */
+  padding: 15px;
+}
+
+.Product-Item img {
+  width: 100%; /* Ensures image takes full width of the container */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+  margin-bottom: 10px; /* Adds spacing below the image */
+}
+
+.Product-Item h1 {
+  margin: 10px 0; /* Adds margin around the product name */
+  font-size: 1.5em; /* Slightly larger font size for emphasis */
+  color: #333; /* Dark text color */
+}
+
+.Product-Item p {
+  margin: 0 0 10px; /* Adds margin below the price */
+  font-size: 1.2em; /* Standard font size */
+  color: #666; /* Gray text color */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,13 +66,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
