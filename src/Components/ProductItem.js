@@ -2,12 +2,12 @@
 import React from 'react';
 import '../App.css'; 
 
-const ProductItem = ({ product }) => {
+const ProductItem = (props) => {
   return (
     <div className='Product-Item'>
-      <img className='Product-Img' src={product.image} alt={product.name} />
-      <h1>{product.name}</h1>
-      <p>{product.price}</p>
+      <img className='Product-Img' src={props.myProduct.image} alt={props.myProduct.name} />
+      <h1>{props.myProduct.name}</h1>
+      <p>{props.myProduct.price}</p>
     </div>
   );
 };
